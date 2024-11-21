@@ -54,27 +54,7 @@ export const Footer = () => {
                     <Typography sx={labelStyles}>FAQ</Typography>
                     <Typography sx={labelStyles}>Contact</Typography>
                 </Stack>
-
-                <Stack rowGap={'1rem'} padding={'1rem'}>
-                    <Typography  variant='h6'>Download App</Typography>
-                    <Typography sx={{...labelStyles,color:"graytext",fontWeight:500}}>Save $3 with App New User Only</Typography>
-                    <Stack flexDirection={'row'} columnGap={'.5rem'}>
-
-                        <Box width={'100px'} height={"100px"}>
-                            <img src={QRCodePng} height={'100%'} width={'100%'} style={{objectFit:'contain'}} alt="QR Code"/>
-                        </Box>
-
-                        <Stack justifyContent={'space-around'}>
-                            <Stack>
-                                <img style={{width:"100%",height:"100%",cursor:"pointer"}} src={googlePlayPng} alt="GooglePlay" />
-                            </Stack>
-                            <Stack>
-                                <img style={{width:"100%",height:'100%',cursor:"pointer"}} src={appStorePng} alt="AppStore" />
-                            </Stack>
-                        </Stack>
-                    </Stack>
-
-                    <Stack mt={.6} flexDirection={'row'} columnGap={'2rem'}>
+                <Stack mt={.6} flexDirection={'row'} columnGap={'2rem'}>
                         <MotionConfig whileHover={{scale:1.1}} whileTap={{scale:1}}>
                             <motion.img style={{cursor:"pointer"}} src={facebookPng} alt="Facebook" />
                             <motion.img style={{cursor:"pointer"}} src={twitterPng} alt="Twitter" />
@@ -87,9 +67,7 @@ export const Footer = () => {
             </Stack>
 
             {/* lower */}
-            <Stack alignSelf={"center"}>
-                <Typography color={'GrayText'}>&copy; Mern Store {new Date().getFullYear()}. All right reserved</Typography>
-            </Stack>
+           
 
     </Stack>
   )
